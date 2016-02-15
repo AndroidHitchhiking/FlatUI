@@ -1,0 +1,959 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              xmlns:flatviews="http://schemas.android.com/apk/res-auto"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="#e8e8e8"
+              android:paddingLeft="5dp"
+              app:layout_behavior="@string/appbar_scrolling_view_behavior"
+              tools:context="com.android.flat.views.MainActivity"
+              tools:showIn="@layout/activity_main">
+
+    <!-- Dummy item to prevent edit text from receiving focus -->
+    <LinearLayout
+        android:layout_width="0px"
+        android:layout_height="0px"
+        android:focusable="true"
+        android:focusableInTouchMode="true"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+
+            <!-- Edit Text -->
+            <shadik.com.flatviewlib.views.FlatTextView
+                android:id="@+id/title_edittexts"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dip"
+                android:layout_marginTop="10dip"
+                android:gravity="center_vertical"
+                android:maxLines="1"
+                android:text="Edit Texts"
+                android:textSize="20dip"
+                flatviews:fl_textColor="fl_main"
+                flatviews:fl_theme="@array/grass"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="5dip"
+                android:orientation="vertical"
+                android:paddingLeft="10dip"
+                android:paddingRight="10dip">
+
+                <shadik.com.flatviewlib.views.FlatEditText
+                    android:id="@+id/edittext_flat"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dip"
+                    android:gravity="center_vertical"
+                    android:hint="Flat"
+                    android:includeFontPadding="true"
+                    android:maxLines="1"
+                    flatviews:fl_fieldStyle="fl_flat"
+                    flatviews:fl_theme="@array/grass"/>
+
+                <shadik.com.flatviewlib.views.FlatEditText
+                    android:id="@+id/edittext_box"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dip"
+                    android:gravity="center_vertical"
+                    android:hint="Box"
+                    android:includeFontPadding="true"
+                    android:maxLines="1"
+                    flatviews:fl_fieldStyle="fl_box"
+                    flatviews:fl_theme="@array/grass"/>
+
+                <shadik.com.flatviewlib.views.FlatEditText
+                    android:id="@+id/edittext_transparentbox"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dip"
+                    android:gravity="center_vertical"
+                    android:hint="Transparent box"
+                    android:includeFontPadding="true"
+                    android:maxLines="1"
+                    flatviews:fl_fieldStyle="fl_transparent"
+                    flatviews:fl_theme="@array/grass"/>
+
+                <shadik.com.flatviewlib.views.FlatEditText
+                    android:id="@+id/edittext_transparent"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dip"
+                    android:gravity="center_vertical"
+                    android:hint="Transparent"
+                    android:includeFontPadding="true"
+                    android:maxLines="1"
+                    flatviews:fl_borderWidth="0dp"
+                    flatviews:fl_fieldStyle="fl_transparent"
+                    flatviews:fl_theme="@array/grass"/>
+
+                <shadik.com.flatviewlib.views.FlatAutoCompleteTextView
+                    android:id="@+id/autoCompleteTextView1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_centerHorizontal="true"
+                    android:layout_margin="5dip"
+                    android:ems="10"
+                    android:hint="Auto Complete"/>
+
+            </LinearLayout>
+
+
+            <!-- Seek Bar -->
+            <shadik.com.flatviewlib.views.FlatTextView
+                android:id="@+id/title_seekbar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dip"
+                android:layout_marginTop="20dip"
+                android:gravity="center_vertical"
+                android:maxLines="1"
+                android:text="Seek Bar"
+                android:textSize="20dip"
+                flatviews:fl_textColor="fl_main"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="5dip"
+                android:orientation="vertical"
+                android:paddingLeft="10dip"
+                android:paddingRight="10dip">
+
+                <shadik.com.flatviewlib.views.FlatSeekBar
+                    android:id="@+id/seekbar"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dip"
+                    android:max="100"/>
+
+            </LinearLayout>
+
+
+            <!-- Button -->
+            <shadik.com.flatviewlib.views.FlatTextView
+                android:id="@+id/title_buttons"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dip"
+                android:layout_marginTop="20dip"
+                android:gravity="center_vertical"
+                android:maxLines="1"
+                android:text="Buttons"
+                android:textSize="20dip"
+                flatviews:fl_textColor="fl_main"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="5dip"
+                android:orientation="vertical"
+                android:paddingLeft="10dip"
+                android:paddingRight="10dip">
+
+                <shadik.com.flatviewlib.views.FlatTextView
+                    android:id="@+id/title_buttons_shape"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dip"
+                    android:gravity="center_vertical"
+                    android:maxLines="1"
+                    android:text="Shape"
+                    android:textSize="16dip"
+                    flatviews:fl_textColor="fl_main"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:weightSum="2">
+
+                    <shadik.com.flatviewlib.views.FlatButton
+                        android:id="@+id/button_block"
+                        android:layout_width="0dp"
+                        android:layout_height="45dp"
+                        android:layout_margin="3dp"
+                        android:layout_weight="1"
+                        android:text="Block"
+                        flatviews:fl_blockButtonEffectHeight="3dp"
+                        flatviews:fl_textAppearance="fl_light"/>
+
+                    <shadik.com.flatviewlib.views.FlatButton
+                        android:id="@+id/button_flat"
+                        android:layout_width="0dp"
+                        android:layout_height="45dp"
+                        android:layout_margin="3dp"
+                        android:layout_weight="1"
+                        android:text="Full Flat"
+                        flatviews:fl_textAppearance="fl_light"/>
+
+                </LinearLayout>
+
+                <shadik.com.flatviewlib.views.FlatTextView
+                    android:id="@+id/title_buttons_text_appearance"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dip"
+                    android:gravity="center_vertical"
+                    android:maxLines="1"
+                    android:text="Text Appearance"
+                    android:textSize="16dip"
+                    flatviews:fl_textColor="fl_main"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:weightSum="3">
+
+                    <shadik.com.flatviewlib.views.FlatButton
+                        android:id="@+id/button_light"
+                        android:layout_width="0dp"
+                        android:layout_height="45dp"
+                        android:layout_margin="3dp"
+                        android:layout_weight="1"
+                        android:text="Light"
+                        flatviews:fl_textAppearance="fl_light"/>
+
+                    <shadik.com.flatviewlib.views.FlatButton
+                        android:id="@+id/button_white"
+                        android:layout_width="0dp"
+                        android:layout_height="45dp"
+                        android:layout_margin="3dp"
+                        android:layout_weight="1"
+                        android:text="White"/>
+
+                    <shadik.com.flatviewlib.views.FlatButton
+                        android:id="@+id/button_dark_text"
+                        android:layout_width="0dp"
+                        android:layout_height="45dp"
+                        android:layout_margin="3dp"
+                        android:layout_weight="1"
+                        android:text="Dark"
+                        flatviews:fl_textAppearance="fl_dark"/>
+
+                </LinearLayout>
+
+                <shadik.com.flatviewlib.views.FlatTextView
+                    android:id="@+id/title_buttons_touch_effect"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dip"
+                    android:gravity="center_vertical"
+                    android:maxLines="1"
+                    android:text="Touch Effect"
+                    android:textSize="16dip"
+                    flatviews:fl_textColor="fl_main"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:weightSum="2">
+
+                    <shadik.com.flatviewlib.views.FlatButton
+                        android:id="@+id/button_ease"
+                        android:layout_width="0dp"
+                        android:layout_height="45dp"
+                        android:layout_margin="3dp"
+                        android:layout_weight="1"
+                        android:text="Ease Effect"
+                        flatviews:fl_textAppearance="fl_light"
+                        flatviews:fl_touchEffect="fl_ease"/>
+
+                    <shadik.com.flatviewlib.views.FlatButton
+                        android:id="@+id/button_ripple"
+                        android:layout_width="0dp"
+                        android:layout_height="45dp"
+                        android:layout_margin="3dp"
+                        android:layout_weight="1"
+                        android:text="Ripple Effect"
+                        flatviews:fl_textAppearance="fl_light"
+                        flatviews:fl_touchEffect="fl_ripple"/>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+            <!-- CheckBox -->
+            <shadik.com.flatviewlib.views.FlatTextView
+                android:id="@+id/title_checkbox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dip"
+                android:layout_marginTop="10dip"
+                android:gravity="center_vertical"
+                android:maxLines="1"
+                android:text="Check Box"
+                android:textSize="20dip"
+                flatviews:fl_textColor="fl_main"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dip"
+                android:paddingLeft="10dip"
+                android:paddingRight="10dip"
+                android:weightSum="2">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <shadik.com.flatviewlib.views.FlatTextView
+                        android:id="@+id/title_checkbox_enabled"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="5dip"
+                        android:gravity="center_vertical"
+                        android:text="Enabled"
+                        android:textSize="16dip"
+                        flatviews:fl_textColor="fl_main"/>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dip"
+                        android:orientation="vertical">
+
+                        <shadik.com.flatviewlib.views.FlatCheckBox
+                            android:id="@+id/checkbox_unchecked_enabled"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_margin="5dip"
+                            android:background="#0000"
+                            android:text="unchecked"
+                            flatviews:fl_size="20dip"/>
+
+                        <shadik.com.flatviewlib.views.FlatCheckBox
+                            android:id="@+id/checkbox_checked_enabled"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_margin="5dip"
+                            android:background="#0000"
+                            android:checked="true"
+                            android:text="checked"
+                            flatviews:fl_size="20dip"/>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <shadik.com.flatviewlib.views.FlatTextView
+                        android:id="@+id/title_checkbox_disabled"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="5dip"
+                        android:gravity="center_vertical"
+                        android:text="Disabled"
+                        android:textSize="16dip"
+                        flatviews:fl_textColor="fl_main"/>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dip"
+                        android:orientation="vertical">
+
+                        <shadik.com.flatviewlib.views.FlatCheckBox
+                            android:id="@+id/checkbox_unchecked_disabled"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_margin="5dip"
+                            android:background="#0000"
+                            android:enabled="false"
+                            android:text="unchecked"
+                            flatviews:fl_size="20dip"/>
+
+                        <shadik.com.flatviewlib.views.FlatCheckBox
+                            android:id="@+id/checkbox_checked_disabled"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_margin="5dip"
+                            android:background="#0000"
+                            android:checked="true"
+                            android:enabled="false"
+                            android:text="checked"
+                            flatviews:fl_size="20dip"/>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+            </LinearLayout>
+
+
+            <!-- RadioButton -->
+            <shadik.com.flatviewlib.views.FlatTextView
+                android:id="@+id/title_radiobutton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dip"
+                android:layout_marginTop="10dip"
+                android:gravity="center_vertical"
+                android:maxLines="1"
+                android:text="Radio Button"
+                android:textSize="20dip"
+                flatviews:fl_textColor="fl_main"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dip"
+                android:paddingLeft="10dip"
+                android:paddingRight="10dip"
+                android:weightSum="2">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <shadik.com.flatviewlib.views.FlatTextView
+                        android:id="@+id/title_radiobutton_enabled"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="5dip"
+                        android:gravity="center_vertical"
+                        android:text="Enabled"
+                        android:textSize="16dip"
+                        flatviews:fl_textColor="fl_main"/>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dip">
+
+                        <RadioGroup
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity="left">
+
+                            <shadik.com.flatviewlib.views.FlatRadioButton
+                                android:id="@+id/radio_unchecked_enabled"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_margin="5dip"
+                                android:background="#0000"
+                                android:text="unchecked"
+                                flatviews:fl_dotMargin="1dp"
+                                flatviews:fl_size="20dip"/>
+
+                            <shadik.com.flatviewlib.views.FlatRadioButton
+                                android:id="@+id/radio_checked_enabled"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_margin="5dip"
+                                android:background="#0000"
+                                android:text="checked"
+                                flatviews:fl_dotMargin="1dp"
+                                flatviews:fl_size="20dip"/>
+
+                        </RadioGroup>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <shadik.com.flatviewlib.views.FlatTextView
+                        android:id="@+id/title_radiobutton_disabled"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="5dip"
+                        android:gravity="center_vertical"
+                        android:text="Disabled"
+                        android:textSize="16dip"
+                        flatviews:fl_textColor="fl_main"/>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dip">
+
+                        <RadioGroup
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity="left">
+
+                            <shadik.com.flatviewlib.views.FlatRadioButton
+                                android:id="@+id/radio_unchecked_disabled"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_margin="5dip"
+                                android:background="#0000"
+                                android:enabled="false"
+                                android:text="unchecked"
+                                flatviews:fl_dotMargin="1dp"
+                                flatviews:fl_size="20dip"/>
+
+                            <shadik.com.flatviewlib.views.FlatRadioButton
+                                android:id="@+id/radio_checked_disabled"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_margin="5dip"
+                                android:background="#0000"
+                                android:checked="true"
+                                android:enabled="false"
+                                android:text="checked"
+                                flatviews:fl_dotMargin="1dp"
+                                flatviews:fl_size="20dip"/>
+
+                        </RadioGroup>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+            </LinearLayout>
+
+
+            <!-- Toggle Button -->
+            <shadik.com.flatviewlib.views.FlatTextView
+                android:id="@+id/title_toggle_button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dip"
+                android:layout_marginTop="10dip"
+                android:gravity="center_vertical"
+                android:maxLines="1"
+                android:text="Toggle Button"
+                android:textSize="20dip"
+                flatviews:fl_textColor="fl_main"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dip"
+                android:paddingLeft="10dip"
+                android:paddingRight="10dip"
+                android:weightSum="2">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <shadik.com.flatviewlib.views.FlatTextView
+                        android:id="@+id/title_toggle_enabled"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="5dip"
+                        android:gravity="center_vertical"
+                        android:text="Enabled"
+                        android:textSize="16dip"
+                        flatviews:fl_textColor="fl_main"/>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dip"
+                        android:orientation="vertical">
+
+                        <shadik.com.flatviewlib.views.FlatToggleButton
+                            android:id="@+id/toggle_unchecked_enabled"
+                            android:layout_width="72dp"
+                            android:layout_height="36dp"
+                            android:text="Full Flat"
+                            flatviews:fl_cornerRadius="18dp"
+                            flatviews:fl_space="14dp"/>
+
+                        <shadik.com.flatviewlib.views.FlatToggleButton
+                            android:id="@+id/toggle_checked_enabled"
+                            android:layout_width="72dp"
+                            android:layout_height="36dp"
+                            android:checked="true"
+                            android:text="Full Flat"
+                            flatviews:fl_cornerRadius="18dp"
+                            flatviews:fl_space="14dp"/>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <shadik.com.flatviewlib.views.FlatTextView
+                        android:id="@+id/title_toggle_disabled"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="5dip"
+                        android:gravity="center_vertical"
+                        android:text="Disabled"
+                        android:textSize="16dip"
+                        flatviews:fl_textColor="fl_main"/>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dip"
+                        android:orientation="vertical">
+
+                        <shadik.com.flatviewlib.views.FlatToggleButton
+                            android:id="@+id/toggle_unchecked_disabled"
+                            android:layout_width="72dp"
+                            android:layout_height="36dp"
+                            android:enabled="false"
+                            android:text="Full Flat"
+                            flatviews:fl_cornerRadius="18dp"
+                            flatviews:fl_space="14dp"/>
+
+                        <shadik.com.flatviewlib.views.FlatToggleButton
+                            android:id="@+id/toggle_checked_disabled"
+                            android:layout_width="72dp"
+                            android:layout_height="36dp"
+                            android:checked="true"
+                            android:enabled="false"
+                            android:text="Full Flat"
+                            flatviews:fl_cornerRadius="18dp"
+                            flatviews:fl_space="14dp"/>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+            </LinearLayout>
+
+
+            <!-- Themes -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="5dip"
+                android:layout_marginTop="20dip">
+
+                <shadik.com.flatviewlib.views.FlatTextView
+                    android:id="@+id/title_themes"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:maxLines="1"
+                    android:text="Themes"
+                    android:textSize="20dip"
+                    flatviews:fl_textColor="fl_main"/>
+
+                <shadik.com.flatviewlib.views.FlatTextView
+                    android:id="@+id/title_themes_note"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:maxLines="1"
+                    android:text="Press buttons to change theme."
+                    android:textSize="12dip"
+                    flatviews:fl_textColor="fl_light"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="5dip"
+                android:orientation="vertical"
+                android:paddingLeft="10dip"
+                android:paddingRight="10dip">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:weightSum="2">
+
+                    <shadik.com.flatviewlib.views.FlatButton
+                        android:id="@+id/button_sand"
+                        android:layout_width="0dp"
+                        android:layout_height="45dp"
+                        android:layout_margin="3dp"
+                        android:layout_weight="1"
+                        android:onClick="onChangeThemeButtonClicked"
+                        android:text="Sand"
+                        flatviews:fl_textAppearance="fl_light"
+                        flatviews:fl_theme="@array/sand"/>
+
+                    <shadik.com.flatviewlib.views.FlatButton
+                        android:id="@+id/button_orange"
+                        android:layout_width="0dp"
+                        android:layout_height="45dp"
+                        android:layout_margin="3dp"
+                        android:layout_weight="1"
+                        android:onClick="onChangeThemeButtonClicked"
+                        android:text="Orange"
+                        flatviews:fl_textAppearance="fl_light"
+                        flatviews:fl_theme="@array/orange"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:weightSum="2">
+
+                    <shadik.com.flatviewlib.views.FlatButton
+                        android:id="@+id/button_candy"
+                        android:layout_width="0dp"
+                        android:layout_height="45dp"
+                        android:layout_margin="3dp"
+                        android:layout_weight="1"
+                        android:onClick="onChangeThemeButtonClicked"
+                        android:text="Candy"
+                        flatviews:fl_textAppearance="fl_light"
+                        flatviews:fl_theme="@array/candy"/>
+
+                    <shadik.com.flatviewlib.views.FlatButton
+                        android:id="@+id/button_blossom"
+                        android:layout_width="0dp"
+                        android:layout_height="45dp"
+                        android:layout_margin="3dp"
+                        android:layout_weight="1"
+                        android:onClick="onChangeThemeButtonClicked"
+                        android:text="Blossom"
+                        flatviews:fl_textAppearance="fl_light"
+                        flatviews:fl_theme="@array/blossom"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:weightSum="2">
+
+                    <shadik.com.flatviewlib.views.FlatButton
+                        android:id="@+id/button_grape"
+                        android:layout_width="0dp"
+                        android:layout_height="45dp"
+                        android:layout_margin="3dp"
+                        android:layout_weight="1"
+                        android:onClick="onChangeThemeButtonClicked"
+                        android:text="Grape"
+                        flatviews:fl_textAppearance="fl_light"
+                        flatviews:fl_theme="@array/grape"/>
+
+                    <shadik.com.flatviewlib.views.FlatButton
+                        android:id="@+id/button_deep"
+                        android:layout_width="0dp"
+                        android:layout_height="45dp"
+                        android:layout_margin="3dp"
+                        android:layout_weight="1"
+                        android:onClick="onChangeThemeButtonClicked"
+                        android:text="Deep"
+                        flatviews:fl_textAppearance="fl_light"
+                        flatviews:fl_theme="@array/deep"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:weightSum="2">
+
+                    <shadik.com.flatviewlib.views.FlatButton
+                        android:id="@+id/button_sky"
+                        android:layout_width="0dp"
+                        android:layout_height="45dp"
+                        android:layout_margin="3dp"
+                        android:layout_weight="1"
+                        android:onClick="onChangeThemeButtonClicked"
+                        android:text="Sky"
+                        flatviews:fl_textAppearance="fl_light"
+                        flatviews:fl_theme="@array/sky"/>
+
+                    <shadik.com.flatviewlib.views.FlatButton
+                        android:id="@+id/button_grass"
+                        android:layout_width="0dp"
+                        android:layout_height="45dp"
+                        android:layout_margin="3dp"
+                        android:layout_weight="1"
+                        android:onClick="onChangeThemeButtonClicked"
+                        android:text="Grass"
+                        flatviews:fl_textAppearance="fl_light"
+                        flatviews:fl_theme="@array/grass"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:weightSum="2">
+
+                    <shadik.com.flatviewlib.views.FlatButton
+                        android:id="@+id/button_dark"
+                        android:layout_width="0dp"
+                        android:layout_height="45dp"
+                        android:layout_margin="3dp"
+                        android:layout_weight="1"
+                        android:onClick="onChangeThemeButtonClicked"
+                        android:text="Dark"
+                        flatviews:fl_textAppearance="fl_light"
+                        flatviews:fl_theme="@array/dark"/>
+
+                    <shadik.com.flatviewlib.views.FlatButton
+                        android:id="@+id/button_snow"
+                        android:layout_width="0dp"
+                        android:layout_height="45dp"
+                        android:layout_margin="3dp"
+                        android:layout_weight="1"
+                        android:onClick="onChangeThemeButtonClicked"
+                        android:text="Snow"
+                        flatviews:fl_textAppearance="fl_light"
+                        flatviews:fl_theme="@array/snow"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:weightSum="2">
+
+                    <shadik.com.flatviewlib.views.FlatButton
+                        android:id="@+id/button_sea"
+                        android:layout_width="0dp"
+                        android:layout_height="45dp"
+                        android:layout_margin="3dp"
+                        android:layout_weight="1"
+                        android:onClick="onChangeThemeButtonClicked"
+                        android:text="Sea"
+                        flatviews:fl_textAppearance="fl_light"
+                        flatviews:fl_theme="@array/sea"/>
+
+                    <shadik.com.flatviewlib.views.FlatButton
+                        android:id="@+id/button_turquoise"
+                        android:layout_width="0dp"
+                        android:layout_height="45dp"
+                        android:layout_margin="3dp"
+                        android:layout_weight="1"
+                        android:onClick="onChangeThemeButtonClicked"
+                        android:text="Blood"
+                        flatviews:fl_textAppearance="fl_light"
+                        flatviews:fl_theme="@array/blood"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:weightSum="2">
+
+                    <shadik.com.flatviewlib.views.FlatButton
+                        android:id="@+id/button_custom_theme_1"
+                        android:layout_width="0dp"
+                        android:layout_height="45dp"
+                        android:layout_margin="3dp"
+                        android:layout_weight="1"
+                        android:onClick="onChangeThemeButtonClicked"
+                        android:text="Custom 1"
+                        flatviews:fl_textAppearance="fl_light"
+                        flatviews:fl_theme="@array/custom_theme_1"/>
+
+                    <shadik.com.flatviewlib.views.FlatButton
+                        android:id="@+id/button_custom_theme_2"
+                        android:layout_width="0dp"
+                        android:layout_height="45dp"
+                        android:layout_margin="3dp"
+                        android:layout_weight="1"
+                        android:onClick="onChangeThemeButtonClicked"
+                        android:text="Custom 2"
+                        flatviews:fl_textAppearance="fl_light"
+                        flatviews:fl_theme="@array/custom_theme_2"/>
+
+                </LinearLayout>
+            </LinearLayout>
+
+
+            <!-- Spinner -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="5dip"
+                android:layout_marginTop="20dip"
+                android:orientation="vertical">
+
+                <shadik.com.flatviewlib.views.FlatTextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:maxLines="1"
+                    android:text="Spinner example"
+                    android:textSize="20dip"
+                    flatviews:fl_textColor="fl_main"/>
+
+                <shadik.com.flatviewlib.views.FlatTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:text="Theme of the spinner is not dynamic yet. This is an example of spinner usage, not a library component."
+                    android:textSize="12dip"
+                    flatviews:fl_textColor="fl_light"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="5dip"
+                android:orientation="vertical"
+                android:paddingLeft="10dip"
+                android:paddingRight="10dip">
+
+                <Spinner
+                    android:id="@+id/themes_spinner"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"/>
+
+            </LinearLayout>
+
+            <com.android.flat.views.RippleLinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="15dp"
+                android:layout_marginRight="5dp"
+                android:background="@android:color/transparent">
+
+                <shadik.com.flatviewlib.views.FlatTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp"
+                    android:text="@string/touch_effect_description"
+                    android:textColor="#333333"
+                    android:textSize="16dp"/>
+
+            </com.android.flat.views.RippleLinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>
+
+
+
