@@ -9,6 +9,13 @@ There are many predefined themes inside this library but you can also use your o
 
 !!! There may be some unexpected results with different screen resolutions and different Android versions. If you have some problems or solutions to those problems please let me know.
 
+Widgets
+-----------
+![Themes][1]
+
+Themes
+-----------
+![Themes][2]
 
 
 
